@@ -9,7 +9,14 @@
 
 body{
     background: #FBEFEF;
+    height: fit-content;
+    justify-content: right;
     color: #333
+}
+
+nav{
+    background: #F5CBCB;
+    color: #FFE2E2;
 }
 
 header{
@@ -19,24 +26,32 @@ header{
     padding: 50px 20px;
 }
 
-nav{
+.nav-bar{
     background: #F5CBCB;
+    padding: 10px;
+    margin: 5px;
+    width: 1200px;
 }
-
+nav img{
+    width: 100px;
+    height: 100px;
+    
+}
 nav ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5CBCB;
     list-style: none;
 }
 
 nav ul li{
     margin: 20px;
+    padding: 10px;
 }
 
 section{
     padding: 40px 20px;
-    max-width: ;
-    margin: auto;
 }
 
 section h2{
@@ -44,3 +59,32 @@ section h2{
     margin-bottom: auto;    
 }
 
+#About {
+    background-color: #FBEFEF;
+    padding: 5px;
+    margin: 15px;
+}
+
+#Home {
+    background-color: #FBEFEF;
+    padding: 5px;
+    margin: 15px;
+}
+
+#Skills {
+    background-color: #FBEFEF;
+    padding: 5px;
+    margin: 15px;
+}
+
+#Project {
+    background-color: #FBEFEF;
+    padding: 5px;
+    margin: 15px;
+}
+
+#Contact {
+    background-color: #FBEFEF;
+    padding: 5px;
+    margin: 15px;
+}
