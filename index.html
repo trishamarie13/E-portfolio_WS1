@@ -3,90 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
 </head>
+
 <body>
 
     <nav>
-
-        
-        <ul>
-            <div class="nav-bar">
+        <div class="nav-bar">
             <div class="logo">
-            <img src="tulips.jpg" alt="tulips">
+                <img src="tulips.jpg" alt="Profile Picture">
             </div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skill">Skill</a></li>
-            <li><a href="#Project">Project</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        
-        </ul>                                                                                                                                                                                                                                                         
+
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    
-</div>
-    
+
     <header id="Home">
-        <h1>Trisha Marie Estrecho</h1>
-        <h3>Bachelor of Science in Information Techmology</h3>
-        <p>Aspiring Video Editor</p>
+        <h1 id="mainHeading">Trisha Marie F. Estrecho</h1>
+
+        <h2>Bachelor of Science in Information Technology</h2>
+
+        <p>Aspiring Web Designer and Video Editor</p>
+
+        <div class="home-buttons">
+
+            <button onclick="showInfo()">
+                👤 My Information
+            </button>
+        </div>
     </header>
 
     <section id="About">
+
         <h2>About Me</h2>
 
-        <p>Hi I am Trisha Marie F. Estrecho, a bachelor of Science in information Techmology. <br> I enjoy learning about web developing. I want to improve my programming skills, my goal is to graduate and become successful and help my family.</p>
+        <div class="about-container">
 
-        <h3>Educational background</h3>
-        <h5>Elementary</h5>
-        <p>Panay Elementary School</p>
-        <h5>Highschool</h5>
-        <p>Panay National Highschool</p>
-        <h5>Senior high School</h5>
-        <p>Roel Balbarono Ardiente College inc.</p>
+            <div class="about-image">
+                <img src="tulips.jpg" alt="Profile">
+            </div>
 
-    </section>
+            <div class="about-text">
 
-    <section id="Skill">
-        <h2>Skills</h2>
+                <p>
+                    Hello! I am <strong>Trisha Marie F. Estrecho</strong>,
+                    a Bachelor of Science in Information Technology student.
+                    I enjoy learning web development, creating websites,
+                    editing videos, and improving my programming skills.
+                    My goal is to graduate successfully and help my family.
+                </p>
 
-        <ul>
-            <li>video & picture Editing</li>
-            <li>cooking</li>
-            <li>web designing</li>
-        </ul>
-    </section>
+                <br>
 
-    <section id="Project">
-        <h3>Project</h3>
+                <h3>Educational Background</h3>
 
-        <div class="Project">
-            <h2>clinic appointment management system</h2>      
-            <p>A system that holds the information of every patient.</p>
+                <br>
 
-        
+                <h4>Elementary</h4>
+                <p>Panay Elementary School</p>
+
+                <br>
+
+                <h4>High School</h4>
+                <p>Panay National High School</p>
+
+                <br>
+
+                <h4>Senior High School</h4>
+                <p>Roel Balbarono Ardiente College Inc.</p>
+
+            </div>
+
         </div>
 
+    </section>
+
+    <section id="Skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Web Design</div>
+            <div class="skill-card">Video Editing</div>
+            <div class="skill-card">Photo Editing</div>
+            <div class="skill-card">Microsoft Office</div>
+            <div class="skill-card">Cooking</div>
+
+        </div>
+
+    </section>
+
+    <section id="Projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+
+                <img src="clinic.png" alt="Clinic">
+
+                <h3>Clinic Appointment Management System</h3>
+
+                <p>
+                    A responsive appointment management system that allows
+                    patients, staff, and administrators to manage
+                    appointments efficiently.
+                </p>
+
+                <button>View Project</button>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="lms.png" alt="LMS">
+
+                <h3>Learning Management System</h3>
+
+                <p>
+                    A web-based learning platform where students can access
+                    lessons, quizzes, certificates, and monitor their
+                    progress.
+                </p>
+
+                <button>View Project</button>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="portfolio.png" alt="Portfolio">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive portfolio website created using HTML,
+                    CSS, JavaScript, and Flexbox.
+                </p>
+
+                <button>View Project</button>
+
+            </div>
+
+        </div>
 
     </section>
 
     <section id="Contact">
-        <h3>My Contact</h3>
 
-        <h4>Email Address</h4>
-        <p>trmestrecho@gmail.com</p>
+        <h2>Contact Me</h2>
 
-        <h4>Phone Number</h4>
-        <p>09911546391</p>
+        <div class="contact-container">
 
-        <h4>Facebook</h4>
+            <input type="text" placeholder="Enter your name">
+
+            <input type="email" placeholder="Enter your email">
+
+            <textarea placeholder="Write your message"></textarea>
+
+            <button id="sendBtn">
+                Send Message
+            </button>
+
+            <hr>
+
+            <h3>My Contact Information</h3>
+
+            <p><strong>Email:</strong> trmestrecho@gmail.com</p>
+
+            <p><strong>Phone:</strong> 0991-154-6391</p>
+
+            <p><strong>Facebook:</strong> Trisha Marie Estrecho</p>
+
+        </div>
 
     </section>
 
     <footer>
-        <p>&copy; 2026 Trisha Marie Estrecho. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 Trisha Marie F. Estrecho
+            <br>
+            All Rights Reserved.
+        </p>
+
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
