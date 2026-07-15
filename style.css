@@ -274,43 +274,7 @@ footer{
     margin-top:40px;
 }
 
-.dark-mode{
-    background:#222;
-    color:#fff;
-}
 
-.dark-mode nav{
-    background:#111;
-}
-
-.dark-mode header{
-    background:#333;
-}
-
-.dark-mode section{
-    background:#444;
-    color:#fff;
-}
-
-.dark-mode footer{
-    background:#111;
-    color:#fff;
-}
-
-.dark-mode .project-card{
-    background:#555;
-}
-
-.dark-mode .skill-card{
-    background:#666;
-}
-
-.dark-mode .project-card button,
-.dark-mode .contact-container button,
-.dark-mode .home-buttons button{
-    background:#888;
-    color:white;
-}
 
 @media (max-width:992px){
 
